@@ -13,15 +13,14 @@
         object-position: center;
         object-fit: cover;
     }
+    
   </style>
 </head>
 <body>
-  <h1>Lazy Loading Images</h1>
-  <div id="image-container">
-    <!-- Add your images here with loading="lazy" attribute -->
-    <img src="image1.jpg" alt="Image 1" loading="lazy" width="300" height="300" />
-    <img src="image2.jpg" alt="Image 2" loading="lazy" width="300" height="300" />
-    <img src="image3.jpg" alt="Image 3" loading="lazy" width="300" height="300" />
+  <div class="grid" id="image-container">
+    <img src="image1.jpg" alt="Image 1" loading="lazy"/>
+    <img src="image2.jpg" alt="Image 2" loading="lazy"/>
+    <img src="image3.jpg" alt="Image 3" loading="lazy"/>
     <!-- ... -->
   </div>
 </body>
