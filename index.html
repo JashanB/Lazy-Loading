@@ -24,6 +24,15 @@
             background-position: center;
         }
 
+        .blur-load.loaded > img {
+            opacity: 1;
+        }
+
+        .blur-load > img {
+            opacity: 0;
+            transition: opacity 200ms ease-in-out;
+        }
+
     </style>
 </head>
 
@@ -73,11 +82,11 @@
         </div>
     </div>
     <script>
-        const blurMe = document.querySelector(".blur-load");
-        blurMe.array.forEach(element => {
+        const blurMe = document.querySelectorAll(".blur-load");
+        blurMe.forEach(element => {
             const img = element.querySelector("img");
             function loaded () {
-
+                element.classList.add("loaded")
             }
             if (img.complete) {
                 loaded()
