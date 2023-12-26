@@ -77,7 +77,12 @@
         blurMe.array.forEach(element => {
             const img = element.querySelector("img");
             function loaded () {
-                
+
+            }
+            if (img.complete) {
+                loaded()
+            } else {
+                img.addEventListener("load", loaded)
             }
         });
     </script>
