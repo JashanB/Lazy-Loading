@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lazy Loading Images</title>
     <style>
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
         img {
             width: 100%;
             aspect-ratio: 1/1;
@@ -18,40 +23,53 @@
             background-size: cover;
             background-position: center;
         }
+
     </style>
 </head>
 
 <body style="margin: 0">
     <div class="grid" id="image-container">
-        <div class="=blur-load" style="background-image: url(imgs/img1-small.jpg);">
+        <div class="blur-load" style="background-image: url(imgs/img1-small.jpg)">
             <img src="imgs/img1.jpg" loading="lazy" />
         </div>
-        <div class="=blur-load" style="background-image: url(imgs/img2-small.jpg);">
+        <div class="blur-load" style="background-image: url(imgs/img2-small.jpg)">
             <img src="imgs/img2.jpg" loading="lazy" />
         </div>
-        <div class="=blur-load" style="background-image: url(imgs/img3-small.jpg);">
+        <div class="blur-load" style="background-image: url(imgs/img3-small.jpg)">
             <img src="imgs/img3.jpg" loading="lazy" />
         </div>
-        <div class="=blur-load" style="background-image: url(imgs/img4-small.jpg);">
+        <div class="blur-load" style="background-image: url(imgs/img4-small.jpg)">
             <img src="imgs/img4.jpg" loading="lazy" />
         </div>
-        <div class="=blur-load" style="background-image: url(imgs/img5-small.jpg);">
+        <div class="blur-load" style="background-image: url(imgs/img5-small.jpg)">
             <img src="imgs/img5.jpg" loading="lazy" />
         </div>
-        <div class="=blur-load" style="background-image: url(imgs/img6-small.jpg);">
+        <div class="blur-load" style="background-image: url(imgs/img6-small.jpg)">
             <img src="imgs/img6.jpg" loading="lazy" />
         </div>
-        <div class="=blur-load" style="background-image: url(imgs/img7-small.jpg);">
+        <div class="blur-load" style="background-image: url(imgs/img7-small.jpg)">
             <img src="imgs/img7.jpg" loading="lazy" />
         </div>
-        <div class="=blur-load" style="background-image: url(imgs/img8-small.jpg);">
+        <div class="blur-load" style="background-image: url(imgs/img8-small.jpg)">
             <img src="imgs/img8.jpg" loading="lazy" />
         </div>
-        <div class="=blur-load" style="background-image: url(imgs/img9-small.jpg);">
+        <div class="blur-load" style="background-image: url(imgs/img9-small.jpg)">
             <img src="imgs/img9.jpg" loading="lazy" />
         </div>
-        <div class="=blur-load" style="background-image: url(imgs/img10-small.jpg);">
+        <div class="blur-load" style="background-image: url(imgs/img10-small.jpg)">
             <img src="imgs/img10.jpg" loading="lazy" />
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/img1-small.jpg)">
+            <img src="imgs/img1.jpg" loading="lazy" />
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/img2-small.jpg)">
+            <img src="imgs/img2.jpg" loading="lazy" />
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/img3-small.jpg)">
+            <img src="imgs/img3.jpg" loading="lazy" />
+        </div>
+        <div class="blur-load" style="background-image: url(imgs/img4-small.jpg)">
+            <img src="imgs/img4.jpg" loading="lazy" />
         </div>
     </div>
 </body>
